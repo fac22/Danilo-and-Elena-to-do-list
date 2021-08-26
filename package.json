@@ -1,0 +1,24 @@
+{
+  "name": "danilo-and-elena-to-do-list",
+  "version": "1.0.0",
+  "description": "\\Building and testing a to-do list tracker",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fac22/Danilo-and-Elena-to-do-list.git"
+  },
+  "author": "Danilo and Elena",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fac22/Danilo-and-Elena-to-do-list/issues"
+  },
+  "homepage": "https://github.com/fac22/Danilo-and-Elena-to-do-list#readme",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.24.2"
+  }
+}
