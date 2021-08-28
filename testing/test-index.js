@@ -10,4 +10,12 @@ test('Submitting a new task adds it to the list', () => {
   addTask.value = 'buy vegetables';
   submitTask.click();
   equal(addedTask.textContent, 'buy vegetables');
+
+  //   resetting the list node so we can test for another task value
+  addedTask.textContent = '';
+
+  // automating NEW user action of adding new task
+  addTask.value = 'finish my book';
+  submitTask.click();
+  equal(addedTask.textContent, 'finish my book');
 });
