@@ -18,4 +18,5 @@ test('Submitting a new task adds it to the list', () => {
   addTask.value = 'finish my book';
   submitTask.click();
   equal(addedTask.textContent, 'finish my book');
+  addedTask.textContent = '';
 });
