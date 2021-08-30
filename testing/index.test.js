@@ -1,3 +1,4 @@
+// ****Add tasks to a list so that I can keep track of them****
 test('Submitting a new task adds it to the list', () => {
   // get the input value from the adding new task field
   const addTask = document.querySelector('#add-task');
@@ -22,21 +23,22 @@ test('Submitting a new task adds it to the list', () => {
   addedTask.textContent = '';
 });
 
+// ****Check things off my list so that I can see what I’ve done***
 test('Checking an entry marks it as complete', () => {
-  // get user input
-  const taskInput = document.querySelector('#add-task');
-  // get submit button
-  const submitBtn = document.querySelector('#submit-task');
-  // automating user action of adding new tasks
-  taskInput.value = 'buy vegetables';
-  submitBtn.click();
-
   // get input checkbox from first task of the list
   // (here I am assuming that every new task generates a checkbox with a unique id)
   const checkbox1 = document.querySelector('#checkbox1');
 
-  // mimic a checked checkbox
-  checkbox1.checked = true;
-
   equal(checkbox1.checked, true);
+});
+
+// ****Delete things from the list if I don’t need to do them anymore****
+test('Deleting an entry removes it from the list', () => {
+  // get delete button
+  const deletBtn = document.querySelector('.delete-task');
+  // get a task
+  const selectTask = document.querySelector('.task');
+
+  deleteBtn.click();
+  equal(selectTask.classList.add('hidden'), true);
 });
