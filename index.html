@@ -11,19 +11,23 @@
     <title>To-do list tracker</title>
   </head>
   <body>
-    <header>
-      <p>To do list tracker</p>
+    <header class="center width-sm">
+      <h1>To do list tracker</h1>
     </header>
-    <main>
+    <main class="center width-sm stack-xl">
       <section>
-        <form action="">
-          <label for="add-task"></label>
-          <input type="text" id="add-task" />
-          <button type="submit">submit task</button>
+        <form>
+          <div class="row">
+            <label for="add-task"></label>
+            <input type="text" id="add-task" placeholder="Add a new task" />
+            <button type="submit" id="add-icon">
+              <img src="images/add_1.svg" alt="add task button" />
+            </button>
+          </div>
         </form>
       </section>
       <section>
-        <ul id="tasks">
+        <ul id="tasks" class="stack-md">
           <li class="task">
             <input type="checkbox" name="checkbox" class="checkbox" />
             <button>delete task</button>
@@ -40,7 +44,7 @@
         <button>show/remove completed tasks</button>
       </section>
     </main>
-    <footer>Credits</footer>
+    <footer class="center width-sm">Credits</footer>
     <script src="testing/test-helpers.js"></script>
     <script src="testing/index.test.js"></script>
   </body>
