@@ -27,20 +27,23 @@ h1 {
 }
 
 /* ---------------------------------- ADD TASK */
-
 #add-task {
   font-family: 'Inconsolata', monospace;
-  width: 12rem;
-  padding: 0.4rem;
+  width: 13rem;
+  padding: 0.5rem;
 
   border-radius: 7px;
-  border: 2px solid #ffba08;
+  border: 3px solid #ffba08;
   /* border-bottom: 3px; */
-  box-shadow: 0px 2px 3px 0px rgba(255, 210, 8, 0.7);
+  box-shadow: 0px 2px 2px 0px rgba(255, 210, 8, 0.7);
+
+  transition: all 0.3sec;
 }
 #add-task:hover,
 #add-task:focus {
   outline: none;
+  box-shadow: 0px 3px 3px 0px rgba(245, 205, 29, 0.7);
+  transform: translateY(-3%);
 }
 #add-icon {
   background: none;
@@ -49,20 +52,49 @@ h1 {
   /* background-image: url(images/plus.svg); */
 }
 #add-icon img {
-  /* padding-top: 0.2rem; */
   width: 30px;
   transition: all 0.3sec;
-  fill: #ffba08;
-  /* margin-top: 0.3rem; */
 }
 #add-icon img:hover {
   transform: translateY(-3%);
   cursor: pointer;
   border-radius: 50%;
-  box-shadow: 0px 2px 1px 1px rgba(255, 210, 8, 0.5);
+  box-shadow: 0px 2px 1px 0px rgba(255, 210, 8, 0.3);
 }
 
 /* ---------------------------------- LIST ELEMENTS */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+#delete-icon {
+  background: none;
+  border: none;
+  padding: 0;
+}
+#delete-icon img {
+  width: 30px;
+  transition: all 0.3sec;
+}
+input[type='checkbox'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  /* background-color: #111024; */
+  border: 2px solid #480ca8;
+  border-radius: 2px;
+}
+input[type='checkbox']:hover {
+  -moz-box-shadow: 0 0 3px rgba(238, 113, 217, 0.7);
+  -webkit-box-shadow: 0 0 3px rgba(238, 113, 217, 0.7);
+  /* box-shadow: 0 1px 1px 0px rgba(238, 113, 217, 0.5); */
+  /* outline: rgba(238, 113, 217, 0.5); */
+  cursor: pointer;
+}
+input[type='checkbox']:checked {
+  background-image: url(images/tick.svg);
+}
 
 /* ----------------------------------------------------------------- PRIMITIVES ------------------------------------------------------------- */
 /* -----------------------------------------------------------------            ------------------------------------------------------------- */

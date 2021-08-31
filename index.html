@@ -15,9 +15,10 @@
       <h1>To do list tracker</h1>
     </header>
     <main class="center width-sm stack-xl">
+      <!-- ---------------------- ADD TASK -->
       <section>
         <form>
-          <div class="row">
+          <div class="row" id="input-field">
             <label for="add-task"></label>
             <input type="text" id="add-task" placeholder="Add a new task" />
             <button type="submit" id="add-icon">
@@ -26,19 +27,26 @@
           </div>
         </form>
       </section>
+      <!-- ---------------------- TASK LIST-->
       <section>
-        <ul id="tasks" class="stack-md">
-          <li class="task">
-            <input type="checkbox" name="checkbox" class="checkbox" />
-            <button>delete task</button>
-            <p>actual task</p>
-          </li>
-          <li class="task">
-            <input type="checkbox" name="checkbox" class="checkbox" />
-            <button>delete task</button>
-            <p>actual task</p>
-          </li>
-        </ul>
+        <div class="center width-sm">
+          <ul id="tasks" class="stack-md">
+            <li class="task row">
+              <input type="checkbox" name="checkbox" class="checkbox" />
+              <p>book doctor appointment</p>
+              <button id="delete-icon">
+                <img src="images/x-button.svg" alt="" />
+              </button>
+            </li>
+            <li class="task row">
+              <input type="checkbox" name="checkbox" class="checkbox" />
+              <p>buy groceries</p>
+              <button id="delete-icon">
+                <img src="images/x-button.svg" alt="" />
+              </button>
+            </li>
+          </ul>
+        </div>
       </section>
       <section>
         <button>show/remove completed tasks</button>
