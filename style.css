@@ -74,7 +74,12 @@ ul {
 /* li p {
   text-decoration: line-through;
 } */
+/* li {
+  margin: 3rem;
+} */
 .delete-icon {
+  position: fixed;
+  margin-left: 17rem;
   background: none;
   border: none;
   padding: 0;
