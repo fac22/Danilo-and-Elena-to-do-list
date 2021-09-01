@@ -30,30 +30,41 @@
       <!-- ---------------------- TASK LIST-->
       <section>
         <div class="center width-sm">
-          <ul id="tasks" class="stack-md">
+          <ul id="tasks" class="stack-lg">
             <li class="task row">
               <input type="checkbox" name="checkbox" class="checkbox" />
               <p>book doctor appointment</p>
-              <button id="delete-icon">
+              <button class="delete-icon hide">
                 <img src="images/x-button.svg" alt="" />
               </button>
             </li>
             <li class="task row">
               <input type="checkbox" name="checkbox" class="checkbox" />
               <p>buy groceries</p>
-              <button id="delete-icon">
+              <button class="delete-icon hide">
+                <img src="images/x-button.svg" alt="" />
+              </button>
+            </li>
+            <li class="task row">
+              <input type="checkbox" name="checkbox" class="checkbox" />
+              <p>finish reading a book</p>
+              <button class="delete-icon hide">
                 <img src="images/x-button.svg" alt="" />
               </button>
             </li>
           </ul>
         </div>
       </section>
+      <!-- ---------------------- TABS-->
       <section>
-        <button>show/remove completed tasks</button>
+        <div class="center width-sm">
+          <button id="toggle-tasks">Hide complete</button>
+        </div>
       </section>
     </main>
     <footer class="center width-sm">Credits</footer>
     <script src="testing/test-helpers.js"></script>
     <script src="testing/index.test.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
