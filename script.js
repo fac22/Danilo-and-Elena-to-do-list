@@ -22,4 +22,18 @@ function appendListItem(task) {
   domFragment.querySelector('li p').textContent = task;
   list.appendChild(domFragment);
 }
-appendListItem('Elena');
+
+// ---------------------------  user adds new task
+const addBtn = document.querySelector('#add-icon');
+const form = document.querySelector('form');
+
+function addTask(e) {
+  e.preventDefault();
+
+  const formData = new FormData(form);
+  const task = formData.get('add-task');
+
+  appendListItem(task);
+}
+
+addBtn.addEventListener('click', addTask);
