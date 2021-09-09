@@ -49,6 +49,9 @@ header img {
 
 /* ---------------------------------- ADD TASK */
 #add-task {
+  background-color: rgb(236, 228, 228);
+  color: #191920;
+
   font-family: 'Inconsolata', monospace;
   width: 15rem;
   padding: 0.5rem;
@@ -63,7 +66,7 @@ header img {
 #add-task:hover,
 #add-task:focus {
   outline: none;
-  box-shadow: 0px 3px 3px 0px rgba(245, 205, 29, 0.7);
+  box-shadow: 0px 3px 7px 0px rgba(245, 205, 29, 0.7);
   transform: translateY(-3%);
 }
 #add-icon {
@@ -90,12 +93,10 @@ ul {
   list-style-type: none;
   padding: 0;
 }
-/* li p {
+.strike-through {
   text-decoration: line-through;
-} */
-/* li {
-  margin: 3rem;
-} */
+}
+
 .delete-icon {
   position: fixed;
   margin-left: 17rem;
@@ -122,15 +123,14 @@ input[type='checkbox'] {
   -moz-appearance: none;
   width: 20px;
   height: 20px;
-  /* background-color: #111024; */
+
   border: 2px solid #730db8;
   border-radius: 2px;
 }
 input[type='checkbox']:hover {
   -moz-box-shadow: 0 0 3px rgba(238, 113, 217, 0.7);
   -webkit-box-shadow: 0 0 3px rgba(238, 113, 217, 0.7);
-  /* box-shadow: 0 1px 1px 0px rgba(238, 113, 217, 0.5); */
-  /* outline: rgba(238, 113, 217, 0.5); */
+
   cursor: pointer;
 }
 input[type='checkbox']:checked {
