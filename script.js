@@ -26,14 +26,21 @@ function appendListItem(task) {
 // ---------------------------  user adds new task
 const addBtn = document.querySelector('#add-icon');
 const form = document.querySelector('form');
+const taskDescription = document.querySelector('#add-task');
 
 function addTask(e) {
   e.preventDefault();
 
-  const formData = new FormData(form);
-  const task = formData.get('add-task');
-
-  appendListItem(task);
+  appendListItem(taskDescription.value);
+  taskDescription.value = '';
 }
 
 addBtn.addEventListener('click', addTask);
+
+// ---------------------------  init
+
+function init() {
+  taskDescription.value = '';
+}
+
+window.addEventListener('load', init);
