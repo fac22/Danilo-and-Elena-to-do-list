@@ -20,7 +20,12 @@
         <form>
           <div class="row" id="input-field">
             <label for="add-task"></label>
-            <input type="text" id="add-task" placeholder="Add a new task" />
+            <input
+              type="text"
+              id="add-task"
+              name="add-task"
+              placeholder="Add a new task"
+            />
             <button type="submit" id="add-icon">
               <img src="images/add_1.svg" alt="add task button" />
             </button>
@@ -73,48 +78,16 @@
                 <img src="images/x-button.svg" alt="" />
               </button>
             </li>
-            <li class="task row">
-              <input type="checkbox" name="checkbox" class="checkbox" />
-              <p>buy groceries</p>
-              <button class="delete-icon hide">
-                <img src="images/x-button.svg" alt="" />
-              </button>
-            </li>
-            <li class="task row">
-              <input type="checkbox" name="checkbox" class="checkbox" />
-              <p>finish reading a book</p>
-              <button class="delete-icon hide">
-                <img src="images/x-button.svg" alt="" />
-              </button>
-            </li>
-            <li class="task row">
-              <input type="checkbox" name="checkbox" class="checkbox" />
-              <p>buy groceries</p>
-              <button class="delete-icon hide">
-                <img src="images/x-button.svg" alt="" />
-              </button>
-            </li>
-            <li class="task row">
-              <input type="checkbox" name="checkbox" class="checkbox" />
-              <p>finish reading a book</p>
-              <button class="delete-icon hide">
-                <img src="images/x-button.svg" alt="" />
-              </button>
-            </li>
-            <li class="task row">
-              <input type="checkbox" name="checkbox" class="checkbox" />
-              <p>buy groceries</p>
-              <button class="delete-icon hide">
-                <img src="images/x-button.svg" alt="" />
-              </button>
-            </li>
-            <li class="task row">
-              <input type="checkbox" name="checkbox" class="checkbox" />
-              <p>finish reading a book</p>
-              <button class="delete-icon hide">
-                <img src="images/x-button.svg" alt="" />
-              </button>
-            </li>
+            <!-- ------------------ new task template -->
+            <template id="template-task">
+              <li class="task row">
+                <input type="checkbox" name="checkbox" class="checkbox" />
+                <p>task description</p>
+                <button class="delete-icon hide">
+                  <img src="images/x-button.svg" alt="" />
+                </button>
+              </li>
+            </template>
           </ul>
         </div>
       </section>

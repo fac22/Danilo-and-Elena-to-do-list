@@ -19,7 +19,7 @@ yellow #ffba08
 
 body {
   font-family: 'Inconsolata', monospace;
-  background-color: #111024;
+  background-color: #151629;
   color: aliceblue;
   margin-top: 2rem;
 }
@@ -104,7 +104,7 @@ input[type='checkbox'] {
   width: 20px;
   height: 20px;
   /* background-color: #111024; */
-  border: 2px solid #480ca8;
+  border: 2px solid #730db8;
   border-radius: 2px;
 }
 input[type='checkbox']:hover {
@@ -131,6 +131,14 @@ input[type='checkbox']:checked {
   border: 2px solid rgb(14, 187, 218);
   border-radius: 7px;
   box-shadow: 0px 3px 2px 0px rgba(14, 187, 218, 0.5);
+
+  transition: all 0.5sec;
+}
+#toggle-tasks:hover {
+  box-shadow: 0px 4px 10px 0px rgba(23, 207, 240, 0.3);
+
+  transform: translateY(-3%);
+  cursor: pointer;
 }
 
 /* ---------------------------------- FOOTER */
