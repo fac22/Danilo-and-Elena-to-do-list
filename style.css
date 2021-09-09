@@ -20,12 +20,31 @@ yellow #ffba08
 body {
   font-family: 'Inconsolata', monospace;
   background-color: #151629;
+
+  /* background: repeating-linear-gradient(
+    45deg,
+    #151629,
+    #151629 10px,
+    #465298 10px,
+    #465298 12px
+  ); */
   color: aliceblue;
   margin-top: 2rem;
 }
+/* .container {
+  background-color: #151629;
+  padding: 2rem;
+} */
 
 h1 {
-  margin-bottom: 4rem;
+  border-bottom: 1px dashed rgb(14, 187, 218);
+  box-shadow: 0px 3px 0px 0px rgba(14, 187, 218, 0.5);
+}
+header img {
+  width: 50px;
+}
+#title {
+  margin-bottom: 5rem;
 }
 
 /* ---------------------------------- ADD TASK */
@@ -145,10 +164,10 @@ input[type='checkbox']:checked {
 footer {
   position: fixed;
   left: 1%;
-  top: 47%;
+  top: 45%;
 }
 footer img {
-  width: 30px;
+  width: 28px;
   transition: all 0.3s;
 }
 footer img:hover {
