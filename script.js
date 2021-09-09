@@ -44,3 +44,18 @@ function init() {
 }
 
 window.addEventListener('load', init);
+
+// ---------------------------  check task off
+const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+function checkTask() {
+  checkboxes.forEach((checkbox) => {
+    if (checkbox.checked === true) {
+      checkbox.nextElementSibling.classList.add('strike-through');
+    } else {
+      checkbox.nextElementSibling.classList.remove('strike-through');
+    }
+  });
+}
+
+checkboxes.forEach((checkbox) => checkbox.addEventListener('click', checkTask));
