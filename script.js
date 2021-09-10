@@ -4,6 +4,7 @@ var tasks = document.querySelectorAll('.task');
 var deleteTasks = document.querySelectorAll('.delete-task');
 var checkboxes = document.querySelectorAll('input[type="checkbox"]');
 const taskDescription = document.querySelector('#add-task');
+const popup = document.querySelector('.popup');
 
 // ---------------------------  add/hide delete button
 
@@ -53,8 +54,13 @@ function domUpdate() {
 function addTask(e) {
   e.preventDefault();
 
-  appendListItem(taskDescription.value);
-  taskDescription.value = '';
+  if (taskDescription.value === '') {
+    popup.classList.add('show');
+  } else {
+    popup.classList.remove('show');
+    appendListItem(taskDescription.value);
+    taskDescription.value = '';
+  }
 }
 
 addBtn.addEventListener('click', addTask);
